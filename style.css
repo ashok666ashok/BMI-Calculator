@@ -1,0 +1,90 @@
+body{
+    overflow-x: hidden;
+    background-color: rgba(2, 2, 28, 0.837);
+}
+.gender {
+  display: grid;
+  place-items: center;
+}
+.gender-title {
+  display: block;
+}
+
+.form-check {
+  position: relative;
+  bottom: 5px;
+}
+.labels{
+    display: grid;
+    gap:  10px;
+    align-self: end;
+}
+.age-input{
+    position: relative;
+    bottom: 5px;
+}
+.cm-feet{
+    width: 200px;
+    display: block;
+    text-align: center;
+    float: inline-end;
+}
+.weight{
+    position: relative;
+    top: 65px;
+}
+.g{
+    position: relative;
+    top: 20px;
+}
+.a{
+    position: relative;
+    top: 28px;
+}
+.h{
+    position: relative;
+    top: 45px;
+}
+.calculate{
+    display: grid;
+    place-items: center;
+}
+.resultDiv{
+    border-radius: 10px;
+}
+.feet-cm{
+    width: 150px;
+    text-align: center;
+    float: inline-end;
+}
+
+.progress{
+    height: 10px;
+    width: 200px;
+    background-color: grey;
+    
+    
+}
+.rightside{
+    display: grid;
+    place-items: centeer;
+}
+.progressbar{
+    width: 1%;
+    height: 10px;
+    background-color: rgb(147, 48, 48);
+    transition: all 0.6s;
+}
+.mainbox{
+    display: grid;
+    place-items: center;
+    height: 80vh;
+    
+}
+.b{
+    box-shadow:  1px 1px 16px ;
+    background-color:rgba(2, 2, 28) ;
+    border: 15px inset rgba(255, 255, 255, 0.381);
+    border-radius: 15px;
+    color: whitesmoke;
+}

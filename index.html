@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light fw-bolder" href="#">BMI Calculator</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        </div>
+    </nav>
+
+    <!-- table -->
+<table>
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="mainbox">
+        <div class="col-6  b p-4">
+            <div class="mainheading p-4">
+                <h2 class="text-center">BMI Calculator</h2>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <div class="labels">
+                        <h5 class="ps-3 g">Gender : </h5>
+                        <h5 class="ps-3 a">Age : </h5>
+                        <h5 class="ps-3 h">Height : </h5>
+                        <h5 class="ps-3 weight">Weight : </h5>
+                    </div>
+                </div>
+                <div class="col-6 p-3">
+                    <div class="form-check mb-3">
+                        <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary" for="option1"><i class="fa-solid fa-mars"></i>Male</label>
+                        
+                        <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="option2"><i class="fa-solid fa-venus"></i>Female</label>
+                    </div>
+                    <div class="age-input ps-3 mb-3">
+                        <input type="number" class="form-control" id="age" placeholder="Enter your age">
+                    </div>
+                    <div class="height-input" id="hInput">
+                        
+<div class="input-group ps-3 mb-4"  id="">
+    <input type="number" class="form-control" placeholder="Height" id="hCm" aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <span class="input-group-text" id="basic-addon2">CM</span>
+</div>
+<!-- <div class="cm-feet mb-3">
+    <div class="card">
+        <a href="#" onclick="convertFeet()">Switch to Feet And Inch</a>
+    </div>
+</div> -->
+  </div>
+  <div class="weight-input">
+    <div class="input-group mb-3 ps-3">
+        <input type="number" class="form-control" placeholder="Weight" id="weight" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <span class="input-group-text" id="basic-addon2">KG</span>
+    </div>
+  </div>
+  <div id="err"  class="text-danger text-center"></div>
+<div class="calculate">
+        <button onclick="getValues()" class="btn btn-primary">Calculate BMI</button>
+</div>
+
+  
+                    </div>
+                    <div class="col-4 rightside">
+                        <div class="Bmi">
+                            <div class="bmi-result">
+                                <div class="result-title">
+                                    <h4 class="text-center">YOUR BMI IS:</h4>
+                                </div>
+                                <div class="resultDiv bg-primary p-3">
+                                    <div class="result text-center text-light fw-bolder" id="result">0.00</div>
+                                </div>
+                                <div class="bmi-progress pt-5 ps-2">
+                                   
+                                    <div class="progress">
+                                        <div class="progressbar" id="progressbar"></div>
+                                    </div>
+                                
+                                    <div id="progressResult"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+            </div>
+        </div>
+    </div>
+        <div class="col-3"></div>
+    </div>
+</table>
+
+<script src="./script.js"></script>
+    
+</body>
+</html>
